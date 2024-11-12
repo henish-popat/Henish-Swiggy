@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: sans-serif;
+}
+
+/* Responsive container */
+.burgerpage {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 128, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.burgerpage img {
+    width: 150px;
+    height: 150px;
+}
+
+.burgerpage h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+/* Carousel */
+.carousel {
+    background: rgba(221, 161, 20, 0.837);
+    margin: 20px 0;
+}
+
+.carousel-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: rgba(221, 161, 20, 0.837);
+    border-radius: 5px;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: auto;
+}
+
+/* Main burger grid */
+.mainburger {
+    width: 100%;
+    padding: 20px;
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Burger items */
+.burger2 {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.burger2 img {
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+
+.burger2 h2, .burger2 h1, .burger2 p {
+    margin: 10px 0;
+}
+
+.burger2 .btn {
+    margin-top: 10px;
+}
+
+.burger2 .btn button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #07da54;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.burger2:hover {
+    transform: scale(0.95);
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: burlywood;
+    text-align: center;
+}
+
+.footer button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .carousel-cell {
+        width: 80%;
+    }
+
+    .burger2 {
+        width: 45%;
+    }
+
+    .footer button {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-cell {
+        width: 100%;
+    }
+
+    .burger2 {
+        width: 100%;
+    }
+
+    .footer button {
+        margin: 5px;
+    }
+}

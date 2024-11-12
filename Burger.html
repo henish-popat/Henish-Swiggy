@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy-Burger</title>
+    <link rel="icon" href="Assets/Burger's img/Burger king logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+    }
+
+
+    .burgerpage{
+        width: 100%;
+        height: 200px;
+        /* border: 2px solid red; */
+        background-color: rgb(255, 128, 0);
+    }
+
+
+    .burgerpage img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .burgerpage h2{
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+    }
+  
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: rgba(221, 161, 20, 0.837);
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: rgba(221, 161, 20, 0.837);
+  border-radius: 5px;
+  /* counter-increment: gallery-cell; */
+}
+
+.carousel-cell img{
+    width: 200px;
+    height: 200px;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+    .mainburger {
+        width: 100%;
+        height: 1000px;
+        background-color: orange;
+    }
+
+    .burger2 {
+        width: 20%;
+        height: 430px;
+        margin-left: 50px;
+        float: left;
+        transition: all 0.3s ease;
+        position: relative;
+        margin-top: 40px;
+
+    }
+
+    .burger2:hover {
+        scale: 0.9;
+    }
+
+    .burger2 a {
+        color: black;
+        text-decoration: none;
+
+    }
+
+    .burger2 img {
+        width: 95%;
+        height: 200px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        /* transform: scale(1); */
+        text-decoration: none;
+        border-radius: 20px;
+        background-size: cover;
+        margin-bottom: 1px;
+
+    }
+
+
+    .burger2 h2 {
+        position: absolute;
+        top: 160px;
+        left: 15px;
+        color: black;
+        font-size: 17px;
+        background-color: antiquewhite;
+
+    }
+
+
+
+    .burger2 .btn {
+        width: auto;
+        border-color: white;
+        padding: 5px;
+    }
+
+    .btn #buy {
+        padding: 7px;
+        border-color: white;
+    }
+
+    .footer {
+        width: 100%;
+        height: 100px;
+        background-color: burlywood;
+    }
+
+    .footer button {
+        background-color: black;
+        margin-top: 30px;
+        margin-left: 600px;
+    }
+</style>
+
+<body>
+    <!-- burgerpage -->
+    <div class="burgerpage">
+        <marquee behavior="alternate" direction="right" scrollamount="10">
+            <img src="Assets/Burger's img/BURGER KING OWNER.jpeg" alt="">
+            <h2>Best Offers</h2>
+        </marquee>
+        <!-- <h1>Flickity - autoPlay: Number</h1> -->
+
+        <!-- Flickity HTML init -->
+        <div class="carousel" data-flickity='{ "autoPlay": 1800 }'>
+            <div class="carousel-cell">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img src="Assets/Burger's img/OFFER 2.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 2.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 2.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 2.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 2.jpeg" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img src="Assets/Burger's img/OFFER 3.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 3.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 3.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 3.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 3.jpeg" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img src="Assets/Burger's img/OFFER 4.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 4.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 4.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 4.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 4.jpeg" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img src="Assets/Burger's img/OFFER 5.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 5.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 5.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 5.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 5.jpeg" alt="">
+            </div>
+        </div>
+
+        <!-- burgerpage over -->
+        <div class="mainburger">
+            <div class="burger2">
+                <a href=""><img src="Assets/Burger's img/Section 2 Burger.jpeg" alt="">
+                    <h2>Items at Rs 139</h2>
+                    <h1>Burger King</h1>
+                    <iconify-icon icon="octicon:feed-star-16" style="color: #07da54"></iconify-icon><span>4.3 <h3>20-25
+                            mins</h3></span>
+                    <p>Veg,cheese,Aloo-Tikki <br> French-Fries,Coca-cola.. <br> at just Rs-139 only..</p>
+                </a>
+                <div class="btn">
+                    <a href="Form.html">
+                        <button id="buy">
+                            <input type="button" value="Buy Now">
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="burger2">
+                <a href="Burger.html"><img src="Assets/Burger's img/Burger 1.jpeg" alt="">
+                    <h2>Items at Rs 199</h2>
+                    <h1>cheese Burger</h1>
+                    <iconify-icon icon="octicon:feed-star-16" style="color: #07da54"></iconify-icon><span>4.9 <h3>10-20
+                            mins</h3></span>
+                    <p>Vegetable<br> Aloo-Tikki,cheese <br> get now...</p>
+                </a>
+                <div class="btn">
+                    <a href="Form.html">
+                        <button id="buy">
+                            <input type="button" value="Buy Now">
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="burger2">
+                <a href="Burger.html"><img src="Assets/Burger's img/BURGER KING.jpeg" alt="">
+                    <h2>Just Rs-189</h2>
+                    <h1>Special-combo</h1>
+                    <iconify-icon icon="octicon:feed-star-16" style="color: #07da54"></iconify-icon><span>4.7 <h3>20-25
+                            mins</h3></span>
+                    <p>Double layer, 2-Aloo-tiki's <br> French-Fries,Coca-cola <br> at just Rs-189 only..</p>
+                </a>
+                <div class="btn">
+                    <a href="Form.html">
+                        <button id="buy">
+                            <input type="button" value="Buy Now">
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="burger2">
+                <a href="Burger.html"><img src="Assets/Burger's img/Burger 4.jpeg" alt="">
+                    <h2>Just Rs-129</h2>
+                    <h1>Burger King-Sp.</h1>
+                    <iconify-icon icon="octicon:feed-star-16" style="color: #07da54"></iconify-icon><span>4.3 <h3>30-35
+                            mins</h3></span>
+                    <p>Burgers, American <br> Kalawad Road, <br> buy 1 get 1 free</p>
+                </a>
+                <div class="btn">
+                    <a href="Form.html">
+                        <button id="buy">
+                            <input type="button" value="Buy Now">
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="burger2">
+                <a href="Burger.html"><img src="Assets/Burger's img/Burger 5.jpeg" alt="">
+                    <h2>Just Rs-189</h2>
+                    <h1>BACON-KING</h1>
+                    <iconify-icon icon="octicon:feed-star-16" style="color: #07da54"></iconify-icon><span>4.9 <h3>20-25
+                            mins</h3></span>
+                    <p>Burgers, American <br> Kalawad Road...</p>
+                </a>
+                <div class="btn">
+                    <a href="Form.html">
+                        <button id="buy">
+                            <input type="button" value="Buy Now">
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="burger2">
+                <a href="Burger.html"><img src="Assets/Burger's img/Burger 6.jpeg" alt="">
+                    <h2>Just Rs-120</h2>
+                    <h1>Crispy cheese Burger</h1>
+                    <iconify-icon icon="octicon:feed-star-16" style="color: #07da54"></iconify-icon><span>4.3 <h3>10-15
+                            mins</h3></span>
+                    <p>New Crispy veg, <br>Cheese Burger</p>
+                </a>
+                <div class="btn">
+                    <a href="Form.html">
+                        <button id="buy">
+                            <input type="button" value="Buy Now">
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="burger2">
+                <a href="Burger.html"><img src="Assets/Burger's img/Burger 7.jpeg" alt="">
+                    <h2>Just Rs-190</h2>
+                    <h1>Spicy Crispy Burger</h1>
+                    <iconify-icon icon="octicon:feed-star-16" style="color: #07da54"></iconify-icon><span>4.3 <h3>30-35
+                            mins</h3></span>
+                    <p>Spicy Crispy veg, <br>Burger with fully, loaded cheese with fries</p>
+                </a>
+                <div class="btn">
+                    <a href="Form.html">
+                        <button id="buy">
+                            <input type="button" value="Buy Now">
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="burger2">
+                <a href="Burger.html"><img src="Assets/Burger's img/Burger 8.jpeg" alt="">
+                    <h2>Just Rs-110</h2>
+                    <h1>Spicy Crispy Burger</h1>
+                    <iconify-icon icon="octicon:feed-star-16" style="color: #07da54"></iconify-icon><span>4.3 <h3>40-45
+                            mins</h3></span>
+                    <p>Spicy Crispy veg, <br>Burger with fully, loaded cheese with fries</p>
+                </a>
+                <div class="btn">
+                    <a href="Form.html">
+                        <button id="buy">
+                            <input type="button" value="Buy Now">
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <button>
+                <a href="Pizza Hut.html" class="pizzabtn">
+
+                    <input type="button" name="Pizzas" value="Pizza">
+            </button>
+            </a>
+            <button>
+                <a href="Swiggy.html">
+
+                    <input type="button" name="Back to homepage" value="Homepage">
+                </a>
+            </button>
+        </div>
+        <div class="carousel" data-flickity='{ "autoPlay": 1500 }'>
+            <div class="carousel-cell">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 1.jpeg" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img src="Assets/Burger's img/OFFER 2.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 2.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 2.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 2.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 2.jpeg" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img src="Assets/Burger's img/OFFER 3.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 3.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 3.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 3.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 3.jpeg" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img src="Assets/Burger's img/OFFER 4.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 4.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 4.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 4.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 4.jpeg" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img src="Assets/Burger's img/OFFER 5.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 5.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 5.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 5.jpeg" alt="">
+                <img src="Assets/Burger's img/OFFER 5.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
